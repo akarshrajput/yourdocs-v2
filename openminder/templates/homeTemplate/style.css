@@ -1,0 +1,237 @@
+/* font-family: "Poppins", sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #212529;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 4rem;
+  border-bottom: 1px solid #49505711;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+.main-header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-img {
+  height: 2rem;
+}
+.main-search-container {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  background-color: #f1f3f5;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 0rem 1rem;
+}
+.main-search-logo {
+  fill: #495057;
+  width: 2.2rem;
+}
+.main-search {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background-color: inherit;
+  font-size: 1.4rem;
+  padding: 1rem 1rem 1rem 0;
+  width: 40rem;
+}
+.main-search::placeholder {
+  color: #495057;
+}
+.secondary-link-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.secondary-link-item {
+  text-decoration: none;
+  color: #343a40;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+}
+
+.special-secondary-link-item {
+  background-color: #2f9e44;
+  color: #f1f3f5;
+}
+.write-logo {
+  fill: #343a40;
+  width: 1.6rem;
+}
+/* Hero Section */
+.hero-section {
+  margin-top: 8rem;
+  padding: 6rem 20rem;
+}
+.hero-section-quote {
+  font-size: 6rem;
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+.hero-section-headline {
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.hero-section-start-reading-button {
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.hero-section-start-reading-button:hover {
+  background-color: #212529;
+}
+/* Trending */
+.trending-home {
+  padding: 6rem 20rem;
+}
+.trending-home-header {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.trending-home-trending-icon {
+  height: 1.8rem;
+}
+.trending-home-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+.trending-home-element-flex {
+  display: flex;
+  gap: 2rem;
+  line-height: 1.8;
+}
+.trending-home-element-flex-number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ced4da;
+}
+.trending-home-element-flex-creator-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.trending-home-element-flex-blog {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.trending-home-element-sub-flex {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #495057;
+}
+/* Article Section */
+.article-section {
+  display: grid;
+  grid-template-columns: 5fr 2.4fr;
+  padding: 8rem 20rem;
+  gap: 4rem;
+  border-top: 1px solid #49505727;
+}
+.article {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.article-main-text {
+  line-height: 1.8;
+}
+.article-blog-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.article-text {
+  font-size: 1.4rem;
+}
+.article-sub-flex {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #495057;
+}
+.article-img {
+  display: flex;
+  align-items: center;
+}
+.article-blog-img {
+  width: 100%;
+  transition: all 0.3s;
+  border-radius: 0.4rem;
+}
+.more-articles-section {
+  height: fit-content;
+  /* width: 34.2rem; */
+  border-bottom: 1px solid #49505727;
+  padding-bottom: 2rem;
+}
+.more-articles-section-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.more-articles-section-links {
+  margin-bottom: 2rem;
+}
+.more-articles-section-links a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  background-color: #e9ecef;
+  border-radius: 2rem;
+  line-height: 3;
+  margin-right: 0.4rem;
+}
+.more-articles-section-topics {
+  font-size: 1.4rem;
+  color: #2f9e44;
+  font-weight: 500;
+}
+.open-minder-gif {
+  width: 50%;
+  margin-top: 2rem;
+}

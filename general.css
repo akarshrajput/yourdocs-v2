@@ -1,0 +1,45 @@
+.highlight-heading {
+  background-color: #dee2e6;
+  padding: 0 0.2rem;
+  border-radius: 0.2rem;
+}
+.highlight-text-1 {
+  background-color: #bac8ff;
+  padding: 0 0.2rem;
+  color: inherit;
+}
+.highlight-text-2 {
+  border: 2px dotted #4e71ff;
+  background: none;
+  /* padding: 0 0.2rem; */
+  color: inherit;
+  border-radius: 0.2rem;
+}
+.highlight-text-3 {
+  background: none;
+  color: #4e71ff;
+}
+.general-link {
+  text-decoration: none;
+  color: #800f2f;
+  cursor: pointer;
+  border-bottom: 2px solid inherit;
+  font-weight: 400;
+}
+.general-link:hover {
+  border-bottom: 2px solid #800f2f;
+}
+.highlight-red {
+  background: none;
+  color: #2a47a5;
+}
+.special-link {
+  color: #d9480f !important;
+}
+.extra-special-link {
+  color: #087f5b !important;
+}
+.margin-2-class {
+  margin-bottom: 3rem !important;
+  margin-left: 0 !important;
+}

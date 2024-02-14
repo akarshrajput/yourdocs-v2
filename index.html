@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empowering Your Digital World: Seamless, Secure, Yours.</title>
+    <link rel="icon" href="img/Favicon.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="query.css" rel="stylesheet" />
+    <link href="general.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300;400;500;600;700;800&family=Ephesis&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Leaflet Library-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="cookies">
+      <div class="cookies-container">
+        <p>We use Cookies for better Experience</p>
+        <div>
+          <a class="common-cookie-link cookie-link-accept" href="#">Accept</a>
+          <a class="common-cookie-link cookie-link-reject" href="#">Reject</a>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="cookies-hide-logo"
+        width="24"
+        height="24"
+        fill="#000000"
+        viewBox="0 0 256 256"
+      >
+        <path
+          d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"
+        ></path>
+      </svg>
+    </div>
+    <!--Online/Offline-->
+    <!-- <section class="offline-mode">
+      <div class="offline-mode-container">
+        <p class="offline-mode-container-text"></p>
+      </div>
+    </section> -->
+    <header class="header">
+      <!--Online/Offline-->
+      <!-- <section class="offline-mode">
+        <div class="offline-mode-container">
+          <p class="offline-mode-container-text"></p>
+        </div>
+      </section> -->
+      <div class="header-container">
+        <div class="logo-search-container">
+          <div class="logo">
+            <img src="img/Favicon.png" />
+            <p>YOURDOCS</p>
+          </div>
+          <div class="main-search-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              ></path>
+            </svg>
+            <input class="main-search" placeholder="Search" />
+          </div>
+        </div>
+        <div>
+          <ul class="main-nav-links">
+            <li><a class="main-nav-link-item" href="#">Products</a></li>
+            <li><a class="main-nav-link-item" href="#">Applications</a></li>
+            <li><a class="main-nav-link-item" href="#">Services</a></li>
+            <li>
+              <a class="main-nav-link-item" href="#">Cloud-Server</a>
+            </li>
+            <li>
+              <a class="main-nav-link-item special-link" href="#">API</a>
+            </li>
+            <!-- <li><a class="main-nav-link-item" href="#">API</a></li> -->
+            <li><a class="main-nav-link-item" href="#">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="body-container">
+      <main>
+        <section class="hero-section">
+          <div class="hero-section-container">
+            <div class="hero-section-text">
+              <h1 class="hero-heading">
+                Welcome to <mark class="highlight-heading">YourDocs</mark>,
+                modern solution for modern
+                <mark class="highlight-heading">problem</mark>
+              </h1>
+              <p class="hero-paragraph">
+                Whether you're a developer, designer, project manager, or simply
+                looking to organize your personal projects, YourDocs offers a
+                powerful and intuitive solution.
+              </p>
+              <div class="hero-version">
+                <p>Version 2.00.01</p>
+                <p>Stable version</p>
+                <p class="ip-address">Your IP :</p>
+              </div>
+              <div class="check-all-versions">
+                <a href="source/index.html"
+                  >YourDocs API Documentation &rarr;</a
+                >
+              </div>
+              <div class="hero-link-container">
+                <a class="primary-hero-link common-hero-link" href="#"
+                  >Research Paper
+                  <svg
+                    class="common-hero-link-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M92,108a12,12,0,0,1,12-12h72a12,12,0,0,1,0,24H104A12,12,0,0,1,92,108Zm12,52h72a12,12,0,0,0,0-24H104a12,12,0,0,0,0,24ZM236,64V184a28,28,0,0,1-28,28H36A32,32,0,0,1,4,180V88a12,12,0,0,1,24,0v92a8,8,0,0,0,16,0V64A20,20,0,0,1,64,44H216A20,20,0,0,1,236,64Zm-24,4H68V180a32,32,0,0,1-1,8H208a4,4,0,0,0,4-4Z"
+                    ></path></svg></a
+                ><a class="secondary-hero-link common-hero-link" href="#"
+                  >Learn more !
+                </a>
+              </div>
+            </div>
+            <div class="hero-login-form">
+              <form class="hero-form-container">
+                <div class="form-name-container">
+                  <div class="common-input-container">
+                    <label>First Name</label>
+                    <input
+                      class="input-form-first-name input-form-common"
+                      type="text"
+                    />
+                  </div>
+                  <div class="common-input-container">
+                    <label>Last Name</label>
+                    <input
+                      class="input-form-last-name input-form-common"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="common-input-container">
+                  <label
+                    >DOB
+                    <mark class="highlight-red">*data of birth</mark></label
+                  >
+                  <input
+                    class="input-form-email input-form-common"
+                    type="date"
+                  />
+                </div>
+                <div class="common-input-container">
+                  <label
+                    >Email
+                    <mark class="highlight-red"
+                      >*domain@example.com</mark
+                    ></label
+                  >
+                  <input
+                    class="input-form-email input-form-common"
+                    type="email"
+                  />
+                </div>
+                <div class="common-input-container">
+                  <label
+                    >Mobile
+                    <mark class="highlight-red">*mobile number</mark></label
+                  >
+                  <input
+                    class="input-form-email input-form-common"
+                    type="number"
+                  />
+                </div>
+
+                <button class="submit-button">SIGN IN</button>
+                <p class="passkeys-warning">
+                  <svg
+                    class="passkeys-warning-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M160,12A84.05,84.05,0,0,0,79.38,119.65L23.51,175.51A12,12,0,0,0,20,184v40a12,12,0,0,0,12,12H72a12,12,0,0,0,12-12V212H96a12,12,0,0,0,12-12V188h12a12,12,0,0,0,8.49-3.51l7.86-7.87A84,84,0,1,0,160,12Zm0,144a59.58,59.58,0,0,1-22.1-4.2,12,12,0,0,0-13.22,2.55L115,164H96a12,12,0,0,0-12,12v12H72a12,12,0,0,0-12,12v12H44V189l57.65-57.65a12,12,0,0,0,2.55-13.21A60,60,0,1,1,160,156Zm36-80a16,16,0,1,1-16-16A16,16,0,0,1,196,76Z"
+                    ></path></svg
+                  >Note:* Keep your Passkeys safe after making Account.
+                </p>
+                <p class="form-login-page">
+                  Already a User! <a href="#">Login</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div>
+            <button class="scroll-down">
+              <mark>Scroll down</mark
+              ><svg
+                class="scroll-down-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="service-section">
+          <p class="service-section-heading">Applications &rarr;</p>
+          <div class="service-container">
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>01</p>
+                <div class="special-service">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,144a15.78,15.78,0,0,1-10.42,14.94l-51.65,19-19,51.61a15.92,15.92,0,0,1-29.88,0L78,178l-51.62-19a15.92,15.92,0,0,1,0-29.88l51.65-19,19-51.61a15.92,15.92,0,0,1,29.88,0l19,51.65,51.61,19A15.78,15.78,0,0,1,208,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                    >Open Minder</a
+                  >
+                </div>
+                <p>Story Newsletter</p>
+              </div>
+              <p class="service-application-about">
+                Immerse yourself in a world of stories, where each article comes
+                to life through an intuitive and visually pleasing user
+                interface.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>02</p>
+                <div class="special-service">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,144a15.78,15.78,0,0,1-10.42,14.94l-51.65,19-19,51.61a15.92,15.92,0,0,1-29.88,0L78,178l-51.62-19a15.92,15.92,0,0,1,0-29.88l51.65-19,19-51.61a15.92,15.92,0,0,1,29.88,0l19,51.65,51.61,19A15.78,15.78,0,0,1,208,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                    >Chatter</a
+                  >
+                </div>
+                <p>Chatting Application</p>
+              </div>
+              <p class="service-application-about">
+                A private and secured chatting application. Engage in meaningful
+                conversations and enhance the overall chat experience.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>03</p>
+                <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                  >Generator</a
+                >
+                <p>Random Data</p>
+              </div>
+              <p class="service-application-about">
+                Experience the power of data at your fingertips with our
+                innovative web application for random data generation.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>04</p>
+                <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                  >Docs Map</a
+                >
+                <p>Explore world!</p>
+              </div>
+              <p class="service-application-about">
+                Explore the world with our interactive map application, designed
+                to bring the beauty and functionality of maps to your
+                fingertips.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>05</p>
+                <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                  >YourDocs API</a
+                >
+                <p>Check here</p>
+              </div>
+              <p class="service-application-about">
+                Immerse yourself in a world of stories, where each article comes
+                to life through an intuitive and visually pleasing user
+                interface.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>06</p>
+                <div class="special-service">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,144a15.78,15.78,0,0,1-10.42,14.94l-51.65,19-19,51.61a15.92,15.92,0,0,1-29.88,0L78,178l-51.62-19a15.92,15.92,0,0,1,0-29.88l51.65-19,19-51.61a15.92,15.92,0,0,1,29.88,0l19,51.65,51.61,19A15.78,15.78,0,0,1,208,144ZM152,48h16V64a8,8,0,0,0,16,0V48h16a8,8,0,0,0,0-16H184V16a8,8,0,0,0-16,0V32H152a8,8,0,0,0,0,16Zm88,32h-8V72a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0V96h8a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                    >Anonymous</a
+                  >
+                </div>
+                <p>Talk privately</p>
+              </div>
+              <p class="service-application-about">
+                A private and secured chatting application. Engage in meaningful
+                conversations and enhance the overall chat experience.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>07</p>
+                <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                  >Generator</a
+                >
+                <p>Random Data</p>
+              </div>
+              <p class="service-application-about">
+                Experience the power of data at your fingertips with our
+                innovative web application for random data generation.
+              </p>
+            </div>
+            <div class="service-application">
+              <div class="service-application-link">
+                <p>08</p>
+                <a href="openminder/templates/homeTemplate/homeTemplate.html"
+                  >Docs Map</a
+                >
+                <p>Explore world!</p>
+              </div>
+              <p class="service-application-about">
+                Explore the world with our interactive map application, designed
+                to bring the beauty and functionality of maps to your
+                fingertips.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="featured-box-section">
+          <p class="feature-heading">Cloud Features...</p>
+          <div class="featured-box-section-container">
+            <div class="common-featured-box">
+              <h2>Research paper!</h2>
+              <h3>Write your research paper</h3>
+              <p>
+                Use research paper to submit your code and you can share to
+                others, so that they can see your code online.
+              </p>
+            </div>
+            <div class="common-featured-box">
+              <h2>In-built IDE</h2>
+              <h3>Use our online IDE!</h3>
+              <p>
+                You can use our IDE to submit and learn code. We have the best
+                In-built IDE with maximum features.
+              </p>
+            </div>
+            <div class="common-featured-box">
+              <h2>Store your File</h2>
+              <h3>Use our C53A DB!</h3>
+              <p>
+                You can use our secure Database C53ADB to store your private
+                files, Code, Research Files or others.
+              </p>
+            </div>
+            <div class="common-featured-box">
+              <h2>Best Security</h2>
+              <h3>Always Private</h3>
+              <p>
+                No one can see your files because YourDocs prohibit anyone to
+                access database even our employees.
+              </p>
+            </div>
+          </div>
+        </section>
+        <p class="service-section-heading">Security &rarr;</p>
+        <section class="map-grid">
+          <div class="map-text-container">
+            <div class="map-text-info">
+              <p class="map-sub-heading-text">
+                <svg
+                  class="map-sub-heading-text-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,36H48A20,20,0,0,0,28,56V114.8c0,92.36,78.1,123,93.76,128.18a19.6,19.6,0,0,0,12.48,0C149.9,237.78,228,207.16,228,114.8V56A20,20,0,0,0,208,36Zm-4,78.8c0,73.56-60.53,99.53-76,105-15.47-5.42-76-31.39-76-104.95V60H204ZM79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.51a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0Z"
+                  ></path></svg
+                >Get extra Security using coordinates !
+              </p>
+              <p class="map-paragraph-text">
+                We use your current
+                <a href="#" class="general-link">IP Address</a> along with your
+                current location coordinates with every modification on your
+                data. This will add the extra security layer to your data.
+              </p>
+              <p class="map-paragraph-text">
+                You will get
+                <a href="#" class="general-link">coordinates</a> through your
+                browser, it may be not correct sometime but it will not create
+                any problem. If you have any query related to it go to our
+                <a href="#" class="general-link">Get Help !</a> page.
+              </p>
+            </div>
+          </div>
+          <div class="map-container">
+            <div class="map-info">
+              <p>Location :</p>
+              <p>Latitude <mark class="latitude common-location">...</mark></p>
+              <p>
+                Longitude <mark class="longitude common-location">...</mark>
+              </p>
+              <p>|</p>
+              <p class="ip-address-map">...</p>
+            </div>
+            <div class="original-map" id="map"></div>
+          </div>
+        </section>
+        <!-- Common Asked Question Section -->
+        <section class="accordion section-hidden">
+          <p class="service-section-heading margin-2-class">
+            Commonly Asked Questions &rarr;
+          </p>
+          <div class="accordion-container">
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">01</p>
+                <p class="text">About YourDocs</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon down-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon up-icon"
+                  fill="#1d1f21"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                  ></path>
+                </svg>
+                <div class="hidden-box">
+                  <p>
+                    YourDocs is a comprehensive and secure online platform
+                    designed to meet all your developer needs, documentation
+                    services, file storage, and security needs. Whether you're a
+                    college student or a developer YourDocs offers a
+                    user-friendly and reliable solution for managing your
+                    digital assets and documents.
+                  </p>
+                  <ul>
+                    <li>
+                      Whether you're an individual, a small business, or a large
+                      enterprise we are best for your documentation Process.
+                    </li>
+                    <li>
+                      YourDocs offers a user-friendly and reliable solution for
+                      managing your digital assets and documents.
+                    </li>
+                    <li>
+                      YourDocs is a very clean and simple website, so you will
+                      not face a problem.
+                    </li>
+                    <li>
+                      For more details you can proceed to our
+                      <a href="#">Get our help</a> Page.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">01</p>
+                <p class="text">About YourDocs</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon down-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon up-icon"
+                  fill="#1d1f21"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                  ></path>
+                </svg>
+                <div class="hidden-box">
+                  <p>
+                    YourDocs is a comprehensive and secure online platform
+                    designed to meet all your developer needs, documentation
+                    services, file storage, and security needs. Whether you're a
+                    college student or a developer YourDocs offers a
+                    user-friendly and reliable solution for managing your
+                    digital assets and documents.
+                  </p>
+                  <ul>
+                    <li>
+                      Whether you're an individual, a small business, or a large
+                      enterprise we are best for your documentation Process.
+                    </li>
+                    <li>
+                      YourDocs offers a user-friendly and reliable solution for
+                      managing your digital assets and documents.
+                    </li>
+                    <li>
+                      YourDocs is a very clean and simple website, so you will
+                      not face a problem.
+                    </li>
+                    <li>
+                      For more details you can proceed to our
+                      <a href="#">Get our help</a> Page.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">03</p>
+                <p class="text">Cloud Storage</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    YourDocs provides a robust and scalable cloud-based storage
+                    system, allowing you to securely store, organize, and access
+                    your files from anywhere with an internet connection.
+                  </p>
+                  <ul>
+                    <li>
+                      Say goodbye to the limitations of physical storage devices
+                      and embrace the flexibility of the cloud..
+                    </li>
+                    <li>
+                      Use our very secure database for storing file
+                      <a href="#">Vault</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">04</p>
+                <p class="text">Documentation</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    The platform offers a suite of powerful documentation tools
+                    to streamline your workflow.
+                  </p>
+                  <ul>
+                    <li>
+                      Create, edit, and collaborate on documents in real-time
+                      with colleagues or friends.
+                    </li>
+                    <li>
+                      With version control and access management, you can track
+                      changes and maintain the integrity of your documents.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">05</p>
+                <p class="text">Security</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    At YourDocs, security is a top priority and using
+                    <a href="#">Vault</a> makes it more secure.
+                  </p>
+                  <ul>
+                    <li>
+                      All data is encrypted both in transit and at rest,
+                      ensuring that your sensitive information remains protected
+                      from unauthorized access.
+                    </li>
+                    <li>
+                      Advanced security measures, such as multi-factor
+                      authentication and role-based access control, add an extra
+                      layer of safeguarding to your files.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">06</p>
+                <p class="text">Collaboration</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    Collaborate seamlessly with team members or external
+                    stakeholders using built-in collaboration features.
+                  </p>
+                  <ul>
+                    <li>
+                      You can share documents securely, assign tasks, and
+                      receive real-time feedback
+                    </li>
+                    <li>
+                      Enhance your productivity if you are a college student.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">07</p>
+                <p class="text">Integration</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    YourDocs integrates with other productivity tools and
+                    applications.
+                  </p>
+                  <ul>
+                    <li>
+                      We enable smooth data transfer and enhancing overall
+                      efficiency in your day-to-day tasks.
+                    </li>
+                    <li>
+                      We have a very fast access system in our website, so you
+                      don't have to wait for a long.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">08</p>
+                <p class="text">Accessibility</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    With a responsive and intuitive interface, YourDocs can be
+                    accessed on various devices, including smartphones and
+                    tablets.
+                  </p>
+                  <ul>
+                    <li>
+                      This ensures that you stay connected and productive even
+                      while on the go.
+                    </li>
+                    <li>
+                      We will provide you a very good and clean Interface in any
+                      of your devices.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">09</p>
+                <p class="text">Code execution</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    With the online compiler, users can write, test, and execute
+                    their code in real-time.
+                  </p>
+                  <ul>
+                    <li>
+                      The platform provides instant feedback, helping
+                      programmers debug and optimize their code efficiently.
+                    </li>
+                    <li>
+                      We will also help you just send your problem to us in
+                      <a href="#">Research Paper</a>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="accordion-cursor">
+                <p class="number">10</p>
+                <p class="text">Compiler</p>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon down-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon up-icon"
+                    fill="#1d1f21"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="hidden-box">
+                  <p>
+                    The online compiler supports a wide range of programming
+                    languages, catering to the diverse needs of developers.
+                  </p>
+                  <ul>
+                    <li>
+                      We provide multi-language support to our developers.
+                    </li>
+                    <li>
+                      Common languages like Python, Java, C/C++, JavaScript,
+                      Ruby, PHP, and more are readily available for coding and
+                      execution.
+                      <a href="#">Research Paper</a>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="compiler">
+          <div class="compiler-container">
+            <div class="compiler-input">
+              <textarea class="compiler-input-text" rows="20"></textarea>
+            </div>
+          </div>
+        </section> -->
+      </main>
+    </div>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-info-flex">
+            <h2>Your Docs</h2>
+            <p>All Rights Reserved</p>
+            <p>Copyright &copy; <a href="#">YOUR DOCS</a></p>
+            <p class="current-date"></p>
+          </div>
+        </div>
+        <div class="footer-1">
+          <ul class="footer-link-container">
+            <li>
+              <a class="footer-1-link footer-link" href="#">Services</a>
+            </li>
+            <li>
+              <a class="footer-1-link footer-link" href="#">Compiler</a>
+            </li>
+            <li>
+              <a class="footer-1-link footer-link" href="#">Documentation</a>
+            </li>
+            <li>
+              <a class="footer-1-link footer-link" href="#">Downloads</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-2">
+          <ul class="footer-link-container">
+            <li><a class="footer-2-link footer-link" href="#">GitHub</a></li>
+            <li><a class="footer-2-link footer-link" href="#">Blog</a></li>
+            <li>
+              <a class="footer-2-link footer-link" href="#">Resources</a>
+            </li>
+            <li>
+              <a class="footer-2-link footer-link" href="#">Products</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-3">
+          <ul class="footer-link-container">
+            <li>
+              <a class="footer-3-link footer-link" href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="footer-3-link footer-link" href="#">Get Help !</a>
+            </li>
+            <li>
+              <a class="footer-3-link footer-link" href="#">About us</a>
+            </li>
+            <li>
+              <a class="footer-3-link footer-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
